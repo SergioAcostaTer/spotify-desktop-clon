@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.invisible_scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.ShMHCGsT93epRGdxJp2w.Ss6hr6HYpN4wjHJ9GHmi[aria-colcount="4"]
+  .wTUruPetkKdWAR1dd6w4 {
+  grid-template-columns: [index] 16px [first] 4fr [var1] 2fr [last] minmax(
+      120px,
+      1fr
+    );
+}
