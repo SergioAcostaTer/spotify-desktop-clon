@@ -5,7 +5,7 @@ import usePlaylist from "../hooks/usePlaylist";
 import useUser from "../hooks/useUser";
 import React, { useState } from "react";
 
-const hex = {
+const hex: { [key: number]: string } = {
   0: "0",
   1: "1",
   2: "2",
@@ -22,7 +22,7 @@ const hex = {
   13: "d",
   14: "e",
   15: "f",
-}
+};
 
 export default function Playlist() {
   const { id } = useParams();
@@ -30,7 +30,7 @@ export default function Playlist() {
   const [user, loadingUser] = useUser(playlist?.owner?.id as string);
   const [scrolled, setScrolled] = useState(0);
 
-  const handleScroll = (e: any) => {
+  const handleScroll = (e: React.UIEvent<HTMLDivElement>) => {
     setScrolled(e.target.scrollTop);
   };
 
