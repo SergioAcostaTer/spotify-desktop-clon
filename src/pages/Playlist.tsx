@@ -31,12 +31,23 @@ export default function Playlist() {
   const [scrolled, setScrolled] = useState(0);
 
   const handleScroll = (e: React.UIEvent<HTMLDivElement>) => {
-    setScrolled(e.target.scrollTop);
+    const target = e.target as HTMLDivElement;
+    setScrolled(target.scrollTop);
   };
 
   return (
     <div className="h-full w-full relative">
-      <PageHeader opacity={`${hex[Math.floor(((scrolled / 260 > 1 ? 1 : scrolled / 260) * 255) / 16)]}${hex[Math.floor(((scrolled / 260 > 1 ? 1 : scrolled / 260) * 255) % 16)]}`} />
+      <PageHeader
+        opacity={`${
+          hex[
+            Math.floor(((scrolled / 260 > 1 ? 1 : scrolled / 260) * 255) / 16)
+          ]
+        }${
+          hex[
+            Math.floor(((scrolled / 260 > 1 ? 1 : scrolled / 260) * 255) % 16)
+          ]
+        }`}
+      />
 
       <div
         className="h-full w-full relative overflow-y-auto invisible_scrollbar translate-y-[-64px]"
