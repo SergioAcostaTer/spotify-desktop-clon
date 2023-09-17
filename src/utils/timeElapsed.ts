@@ -1,5 +1,9 @@
 function formatDate(date: Date): string {
-  const options = { year: "numeric", month: "short", day: "numeric" };
+  const options: Intl.DateTimeFormatOptions = {
+    year: "numeric",
+    month: "short",
+    day: "numeric",
+  };
   return date.toLocaleDateString(undefined, options);
 }
 

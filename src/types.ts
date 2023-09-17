@@ -51,9 +51,9 @@ export interface Playlist {
   }
   
   export interface Image {
-    height: any
+    height: number
     url: string
-    width: any
+    width: number
   }
   
   export interface Owner {
