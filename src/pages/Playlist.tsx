@@ -139,7 +139,7 @@ export default function Playlist() {
         </div>
 
         {!loading && (
-          <ul className="h-[318px] w-full flex flex-col gap-[8px] px-[20px] py-[16px] pt-[12.5px]">
+          <ul className="h-full w-full flex flex-col gap-[8px] px-[20px] py-[16px] pt-[12.5px]">
             {playlist?.tracks?.items.map((item, index) => (
               <Song
                 key={item.track.id}

@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 
-export default function PageHeader({ opacity = "00" }: { opacity: string }) {
+export default function PageHeader({ opacity = "00", backgroundColor = "#80A8C0" }: { opacity?: string, backgroundColor?: string }) {
   const navigate = useNavigate();
 
   const handlePrev = () => {
@@ -13,7 +13,7 @@ export default function PageHeader({ opacity = "00" }: { opacity: string }) {
 
   return (
     <div className={`absolute top-0 left-0 w-full z-10 px-[20px] relative h-[64px] flex items-center justify-between rounded-t-[8px]`}
-      style={{ backgroundColor: `#80A8C0${opacity}` }}
+      style={{ backgroundColor: `${backgroundColor}${opacity}` }}
     >
 
     <div className="h-[32px] w-full">

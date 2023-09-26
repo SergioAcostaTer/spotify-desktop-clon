@@ -64,9 +64,9 @@ function Layout({ children }: { children: React.ReactNode }) {
 
   return (
     <>
-      <div className="h-[100vh] w-[100vw] flex flex-col justify-between p-[8px] pb-0 bg-black text-white hidden sm:flex">
-        <div className="min-h-[658px] h-[658px] bg-black text-white flex flex-row gap-[8px]">
-          <nav className="w-[420px] min-w-[287px] rounded-[8px] flex flex-col gap-[8px]">
+      <div className="h-[100vh] w-[100vw] flex flex-col justify-between p-[8px] pb-0 bg-black text-white hidden sm:flex gap-[16px]">
+        <div className="min-h-[658px] h-full bg-black text-white flex flex-row gap-[8px]">
+          <nav className="w-[470px] min-w-[287px] rounded-[8px] flex flex-col gap-[8px]">
             <div className="w-full min-h-[112px] h-[112px] rounded-[8px] bg-[#121212]">
               <ul className="flex flex-col py-[8px] px-[12px]">
                 <li className="py-[4px] px-[12px] rounded-[8px]">
@@ -129,7 +129,7 @@ function Layout({ children }: { children: React.ReactNode }) {
               </ul>
             </div>
 
-            <div className="w-full rounded-[8px] bg-[#121212] h-[538.4px] min-h-[538.4px]">
+            <div className="w-full rounded-[8px] bg-[#121212] h-full min-h-[538.4px]">
               <div>
                 <header className="flex w-full justify-between items-center py-[8px] px-[16px]">
                   <div className="group cursor-pointer relative flex items-center py-[4px] px-[8px] h-[40px]">
@@ -225,7 +225,7 @@ function Layout({ children }: { children: React.ReactNode }) {
               </div>
 
               <div
-                className="w-full h-[400.4px] flex flex-col p-[8px] invisible_scrollbar relative overflow-y-scroll"
+                className="w-full flex flex-col p-[8px] invisible_scrollbar relative overflow-y-scroll h-[calc(100%-139px)]"
                 onScroll={handleScroll}
               >
                 <div className="scroller absolute top-0 right-0 w-[15px] h-[30px] bg-[#f0f0f0ba] transition-opacity duration-300 ease-in-out" />
