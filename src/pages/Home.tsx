@@ -12,7 +12,7 @@ function Home() {
       className="h-full w-full relative overflow-y-auto invisible_scrollbar"
       onScroll={handleScroll}
     >
-      <div className="absolute top-0 left-0 w-full z-0 bg-gradient-to-b from-[#4820b070] via-[#4820b030] to-[#4820b000] h-[320px]" />
+      <div className="absolute top-0 left-0 w-full z-0 bg-gradient-to-b from-[#4820b070] via-[#4820b030] to-[#4820b000] h-[320px] rounded-t-[8px]" />
 
       <div className="sticky top-0 left-0 w-full z-10">
         <PageHeader backgroundColor="#4820b0" opacityHex={opacityHex} />
