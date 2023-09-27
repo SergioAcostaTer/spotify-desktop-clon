@@ -3,54 +3,24 @@ import { useParams } from "react-router-dom";
 import Song from "../components/Songs";
 import usePlaylist from "../hooks/usePlaylist";
 import useUser from "../hooks/useUser";
-import React, { useState } from "react";
-
-const hex: { [key: number]: string } = {
-  0: "0",
-  1: "1",
-  2: "2",
-  3: "3",
-  4: "4",
-  5: "5",
-  6: "6",
-  7: "7",
-  8: "8",
-  9: "9",
-  10: "a",
-  11: "b",
-  12: "c",
-  13: "d",
-  14: "e",
-  15: "f",
-};
+import useOpacity from "../hooks/useOpacity";
 
 export default function Playlist() {
   const { id } = useParams();
   const [playlist, loading, duration] = usePlaylist(id as string);
   const [user, loadingUser] = useUser(playlist?.owner?.id as string);
-  const [scrolled, setScrolled] = useState(0);
-
-  const handleScroll = (e: React.UIEvent<HTMLDivElement>) => {
-    const target = e.target as HTMLDivElement;
-    setScrolled(target.scrollTop);
-  };
+  const {opacityHex, opacity, handleScroll, scrolled} = useOpacity();
 
   return (
     <div className="h-full w-full relative">
       <PageHeader
-        opacity={`${
-          hex[
-            Math.floor(((scrolled / 260 > 1 ? 1 : scrolled / 260) * 255) / 16)
-          ]
-        }${
-          hex[
-            Math.floor(((scrolled / 260 > 1 ? 1 : scrolled / 260) * 255) % 16)
-          ]
-        }`}
+        opacity={opacity}
+        title={loading ? "Loading..." : playlist?.name}
+        opacityHex={opacityHex}
       />
 
       <div
-        className="h-full w-full relative overflow-y-auto invisible_scrollbar translate-y-[-64px]"
+        className="h-full w-full relative overflow-y-auto invisible_scrollbar translate-y-[-64px] rounded-t-[9px]"
         onScroll={handleScroll}
       >
         <div className="h-[340px] w-full flex flex-col px-[20px] relative bg-gradient-to-b from-[#555555] to-[#222222] rounded-t-[9px]">
