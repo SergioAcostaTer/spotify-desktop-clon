@@ -24,7 +24,12 @@ export const PlaylistHomeHori = ({ id = "" }) => {
           </div>
         </div>
       </a>
-      <button className={`absolute top-0 w-[48px] h-[48px] rounded-full bg-green-500 bottom-0 m-auto right-4 opacity-0 group-hover:opacity-100 ${playing && "opacity-100"} transition-opacity duration-300 flex justify-center items-center hover:scale-105`} onClick={() => setPlaying(!playing)}>
+      <button
+        className={`absolute top-0 w-[48px] h-[48px] rounded-full bg-green-500 bottom-0 m-auto right-4 opacity-0 group-hover:opacity-100 ${
+          playing && "opacity-100"
+        } transition-opacity duration-300 flex justify-center items-center hover:scale-105`}
+        onClick={() => setPlaying(!playing)}
+      >
         {playing ? (
           <svg
             role="img"

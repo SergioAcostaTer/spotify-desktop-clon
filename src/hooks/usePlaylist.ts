@@ -13,7 +13,7 @@ const usePlaylist = (id: string): [Playlist | undefined, boolean, string] => {
     getPlaylistDetail(id).then((res) => {
       setData(res);
       const duration = res?.tracks?.items.reduce(
-        (acc: number, cur: { track: Track }) => acc + cur.track.duration_ms,
+        (acc: number, cur: { track: Track }) => acc + cur.track?.duration_ms,
         0
       );
 

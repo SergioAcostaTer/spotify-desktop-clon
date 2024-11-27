@@ -231,15 +231,15 @@ function Layout({ children }: { children: React.ReactNode }) {
                 <div className="scroller absolute top-0 right-0 w-[15px] h-[30px] bg-[#f0f0f0ba] transition-opacity duration-300 ease-in-out" />
 
                 <Playlist id="5VLzuIGTeHqyAoPGZVVcPW" />
-                <Playlist id="37i9dQZF1DXcBWIGoYBM5M" />
-                <Playlist id="37i9dQZF1DX4JAvHpjipBk" />
-                <Playlist id="37i9dQZF1DX4dyzvuaRJ0n" />
-                <Playlist id="37i9dQZF1DX4SBhb3fqCJd" />
-                <Playlist id="37i9dQZF1DX4UtSsGT1Sbe" />
-                <Playlist id="37i9dQZF1DX4o1oenSJRJd" />
-                <Playlist id="37i9dQZF1DX4WYpdgoIcn6" />
-                <Playlist id="37i9dQZF1DX4sWSpwq3LiO" />
-                <Playlist id="37i9dQZF1DX4JAvHpjipBk" />
+                <Playlist id="0kuxXVFGhFVQ4A6h2O1AOF" />
+                <Playlist id="5VitdxqyUyjmkYgXNX8RNr" />
+                <Playlist id="69HCDFt53fmVdVgqzP5P6m" />
+                <Playlist id="56WRTKlfsDnWoCbkC8dwlh" />
+                <Playlist id="0IepDN73Y0GDNBycm63Ewx" />
+                <Playlist id="4NE9iM0CpKZnjOrWn3FS9t" />
+                <Playlist id="5tqGpGq44zA8KeyWLHKmGt" />
+                <Playlist id="25QTwacONij8AQjgtLP1pZ" />
+                <Playlist id="0RODEeXVmvs3Hh5LLOSDPX" />
               </div>
             </div>
           </nav>

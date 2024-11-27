@@ -26,81 +26,76 @@ function Home() {
             ? "Good Afternoon!"
             : "Good Evening!"}
         </h2>
-        
+
         <div className="grid xl:grid-cols-3 grid-cols-2 gap-x-[16px] gap-y-[12px]">
-          <PlaylistHomeHori id="37i9dQZF1DXcBWIGoYBM5M" />
-          <PlaylistHomeHori id="37i9dQZF1DX0XUsuxWHRQd" />
-          <PlaylistHomeHori id="37i9dQZF1DX4JAvHpjipBk" />
-          <PlaylistHomeHori id="37i9dQZF1DX4dyzvuaRJ0n" />
-          <PlaylistHomeHori id="37i9dQZF1DX4SBhb3fqCJd" />
-          <PlaylistHomeHori id="37i9dQZF1DX4o1oenSJRJd" />
+          <PlaylistHomeHori id="0kuxXVFGhFVQ4A6h2O1AOF" />
+          <PlaylistHomeHori id="5VitdxqyUyjmkYgXNX8RNr" />
+          <PlaylistHomeHori id="69HCDFt53fmVdVgqzP5P6m" />
+          <PlaylistHomeHori id="56WRTKlfsDnWoCbkC8dwlh" />
+          <PlaylistHomeHori id="0IepDN73Y0GDNBycm63Ewx" />
+          <PlaylistHomeHori id="4NE9iM0CpKZnjOrWn3FS9t" />
         </div>
 
         <ListHome
           title="Done for you"
           playlists={[
-            "37i9dQZF1E35pgyLkKQfdE",
-            "37i9dQZF1E37nvpjnMlGmV",
-            "37i9dQZF1E37vEtOHQRC0L",
-            "37i9dQZF1E37Fe1wVxWmA2",
-            "37i9dQZF1E39z5T1V6ujNX",
-            "37i9dQZF1E38xGHEvHbbZK",
-            "37i9dQZEVXcU959PSzt1Ge",
+            "5tqGpGq44zA8KeyWLHKmGt",
+            "25QTwacONij8AQjgtLP1pZ",
+            "0RODEeXVmvs3Hh5LLOSDPX",
+            "76Px8dvPMgwziQT91A4gYb",
+            "5Lt3z1NHbUlFDKhkhK0Lr3",
+            "07MBp1t71mTJfuJvQpkGbN",
+            "5GuAFtIhNZrCuPVyGgePzY",
           ]}
         />
-
         <ListHome
           title="Trending"
           playlists={[
-            "37i9dQZF1DXcBWIGoYBM5M",
-            "37i9dQZF1DX0XUsuxWHRQd",
-            "37i9dQZF1DX4JAvHpjipBk",
-            "37i9dQZF1DX4dyzvuaRJ0n",
-            "37i9dQZF1DX4SBhb3fqCJd",
-            "37i9dQZF1DX4o1oenSJRJd",
-            "37i9dQZF1DX4sWSpwq3LiO",
+            "1lWpQi0IINlpDwv9jErA6O",
+            "5GHxuQsFYmXYeliOAF0kFW",
+            "73OAmhNbr1K4g39J0d0gBJ",
+            "6vgjOd3MVHDlKoAtYJTii6",
+            "79kFtlyN77ye7ruwcrmBWq",
+            "1lGAiRIwpSlSFUDtbuOB9Q",
+            "3qD6pP3LeADiYIBNzQ47jM",
           ]}
         />
-
         <ListHome
           title="You can't miss"
           playlists={[
-            "37i9dQZF1DX3sCT1ItXgNd",
-            "37i9dQZF1DWVJv1UsWItkB",
-            "37i9dQZF1DWV1PBrIG2weG",
-            "37i9dQZF1DXb0AsvHMF4aM",
-            "37i9dQZF1DWVhn3qoy98w6",
-            "37i9dQZF1DWWQRwui0ExPn",
-            "37i9dQZF1DWYp5sAHdz27Y",
+            "3w8FFQvsrLYCaovWtakl6U",
+            "4Mtd8GJht948ThClMwVJtn",
+            "59DInFUMkfqg1DIZOkvmd0",
+            "5ORkfsxgVpNHHhlFaxFr85",
+            "7BXCb4OmGPdV0nXOyTVesT",
+            "6VPHvXqqA6HluzAoGDLXBn",
+            "4g50EtYbELUgvl5McHgqCi",
           ]}
         />
-
         <ListHome
           title="Today's top hits"
           playlists={[
-            "37i9dQZF1DXaxEKcoCdWHD",
-            "37i9dQZF1DX1HCSfq0nSal",
-            "37i9dQZF1DX10zKzsJ2jva",
-            "37i9dQZF1DWZjqjZMudx9T",
-            "37i9dQZF1DWXCGnD7W6WDX",
-            "37i9dQZF1DXcd2Vmhfon1w",
-            "37i9dQZF1DWSpF87bP6JSF",
+            "6oszEd4U4CKJwt2h7Bul9v",
+            "22AMdIOwfWk8LLfta2esGU",
+            "3VEvEHoyXf0pYYbsNIXCkl",
+            "2tKmIC7Sy0SU5B9iYGmjlM",
+            "3A81FTUODFWeiNyVQvKCHr",
+            "77xZOMuV2m0l2htoCkANmz",
+            "7kikW64e1yFs4MMy24dqyx",
           ]}
         />
-
         <ListHome
           title="The best of authors"
           playlists={[
-            "37i9dQZF1EFDy1uugMRAcr",
-            "37i9dQZF1EFCiYFI7a93XE",
-            "37i9dQZF1EFF2FqhcrVFZE",
-            "37i9dQZF1EFOqYg474T2zM",
-            "37i9dQZF1EFPIilq1pTz0r",
-            "37i9dQZF1EFK3SdRAXvkPq",
-            "37i9dQZF1EFLPfcPryc4WP",
+            "3S81R24jyGUcFqLJgtGA0u",
+            "4PG0q2kVyucot2pC7QVzmT",
+            "1phCbGZ1nyBpyNaRlKngaP",
+            "2TIop73fC6tcCrimupU1KB",
+            "1zzMa2MBDKMRT5I2G2Ybhh",
+            "1XYBU0lWP2qkk8bBs4bvhD",
+            "0GMHwsiwr5ckadZaqkHroT",
           ]}
         />
-
         <Footer />
       </div>
     </div>
