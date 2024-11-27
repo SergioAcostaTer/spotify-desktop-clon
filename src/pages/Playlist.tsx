@@ -9,7 +9,7 @@ export default function Playlist() {
   const { id } = useParams();
   const [playlist, loading, duration] = usePlaylist(id as string);
   const [user, loadingUser] = useUser(playlist?.owner?.id as string);
-  const {opacityHex, opacity, handleScroll, scrolled} = useOpacity();
+  const { opacityHex, opacity, handleScroll, scrolled } = useOpacity();
 
   return (
     <div className="h-full w-full relative">
@@ -26,15 +26,15 @@ export default function Playlist() {
         <div className="h-[340px] w-full flex flex-col px-[20px] relative bg-gradient-to-b from-[#555555] to-[#222222] rounded-t-[9px]">
           <div className="flex items-end flex-1 w-full pb-[20px]">
             <div className="flex items-center justify-start h-[192px] xl:h-[232px] w-full gap-[16px]">
-              <img
-                className="h-full rounded-[1px] square"
-                src={
-                  !loading
-                    ? playlist?.images?.[0].url
-                    : "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Square_gray.svg/1200px-Square_gray.svg.png"
-                }
-                alt={playlist?.name}
-              />
+              <div className="h-full rounded-[1px] aspect-square relative">
+                <img
+                  className="h-full rounded-[1px] w-full absolute top-0 left-0 z-[50]"
+                  src={playlist?.images?.[0].url}
+                  alt={playlist?.name}
+                />
+
+                <div className="w-full h-full bg-gray-500 animate-pulse" />
+              </div>
 
               <div className="flex-1 flex flex-col justify-center h-full">
                 <p>Lista</p>
@@ -43,15 +43,14 @@ export default function Playlist() {
                 </p>
 
                 <div className="flex items-center gap-[8px] mt-[16px]">
-                  <img
-                    alt={playlist?.owner?.display_name}
-                    src={
-                      loadingUser
-                        ? "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Square_gray.svg/1200px-Square_gray.svg.png"
-                        : user?.images?.[0].url
-                    }
-                    className="w-[24px] h-[24px] rounded-full"
-                  />
+                  <div className="w-[24px] h-[24px] rounded-full relative">
+                    <img
+                      alt={playlist?.owner?.display_name}
+                      src={user?.images?.[0].url}
+                      className="w-full h-full rounded-full absolute top-0 left-0 z-[50]"
+                    />
+                    <div className="w-full h-full bg-gray-500 animate-pulse rounded-full" />
+                  </div>
                   <p>
                     {loading ? "Loading..." : playlist?.owner?.display_name}{" "}
                     {!loading ? playlist?.tracks?.items.length : "0"} songs,{" "}

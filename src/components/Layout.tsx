@@ -27,8 +27,6 @@ function Layout({ children }: { children: React.ReactNode }) {
     const scrollerHeight = container.clientHeight * scroll;
     scroller.style.top = `${scrollerHeight}px`;
 
-    console.log(scrollerHeight, scroll);
-
     if (scrollTimer !== null) {
       clearTimeout(scrollTimer);
     }
@@ -54,13 +52,9 @@ function Layout({ children }: { children: React.ReactNode }) {
     setPlay(!play);
   };
 
-  const handlePrev = () => {
-    console.log("prev");
-  };
+  const handlePrev = () => {};
 
-  const handleNext = () => {
-    console.log("next");
-  };
+  const handleNext = () => {};
 
   return (
     <>

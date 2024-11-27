@@ -9,12 +9,13 @@ export const PlaylistHomeHori = ({ id = "" }) => {
     <div className="relative group">
       <a href={`/playlist/${id}`}>
         <div className="flex xl:h-[80px] h-[64px] rounded-[4px] bg-[#ffffff20] group-hover:bg-[#ffffff50] transition-all duration-300">
-          <div className="h-full">
+          <div className="h-full relative">
             <img
               src={playlist?.images?.[0].url}
               alt={playlist?.name}
-              className="h-full rounded-l-[4px]"
+              className="h-full rounded-l-[4px] absolute bottom-0 left-0 z-[50]"
             />
+            <div className="h-full aspect-square bg-gray-500 rounded-[4px] animate-pulse" />
           </div>
 
           <div className="flex-1 flex flex-col justify-center px-[16px] max-w-[calc(100%-140px)]">
